@@ -18,13 +18,9 @@
 // Be sure that words with chars like -, ', ` are counted right.
 
 function countWords(str) {
-    if(!str.length || str.match(/^[^a-zA-Z0-9]+$/) )
-    {
+  if (!str.length || str.match(/^[^a-zA-Z0-9]+$/)) {
     return 0;
-    }
-
-    else
-   {
-     return str.trim().split(/\s+/).length;
-   }
+  } else {
+    return str.trim().split(/\s+/).length;
+  }
 }

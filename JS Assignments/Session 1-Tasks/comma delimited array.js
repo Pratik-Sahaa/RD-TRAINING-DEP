@@ -11,7 +11,7 @@
 
 // A1) 
 
-function printArray(array){
+function printArray(array) {
    return array.toString();
 }
 

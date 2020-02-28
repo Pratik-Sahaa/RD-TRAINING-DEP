@@ -17,13 +17,14 @@
 
 
 function partitionOn(pred, items) {
-    var itemEven= items.filter(pred);
-    var itemOdd=items.filter(function(value){
+  var itemEven = items.filter(pred);
+  var itemOdd = items.filter(function (value) {
     return !pred(value);
-    });
-    var newItem= itemOdd.concat(itemEven);
-    items.length=0;
-    for( var i=0; i<newItem.length; i++)
+  });
+  var newItem = itemOdd.concat(itemEven);
+  items.length = 0;
+  for (var i = 0; i < newItem.length; i++) {
     items.push(newItem[i]);
-    return itemOdd.length;
   }
+  return itemOdd.length;
+}
