@@ -1,0 +1,107 @@
+body{
+    background-image: url(player.png), url(woodtable.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: 20%, 100%;
+    background-position-x: right, center;
+    background-position-y: bottom, center;
+}
+
+.black{
+    font-size: 50px;
+    justify-content: center;
+    height: 100px;
+    width:100px;
+    background: rgb(119, 114, 114); 
+    display: flex;
+   
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(16, 15, 116);
+    font-family: 'Trade Winds' ;
+    font-size: 26px;
+}
+
+/* .board{
+    background-color:yellow;
+} */
+
+body{
+    background-color: rgb(43, 43, 82);
+}
+
+.white{
+    font-size: 50px;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background: white;
+    display: flex;
+}
+
+
+.firstwhite{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.firstblack{
+    justify-content: center;    
+    display: flex;
+    flex-direction: row;
+}
+
+/* @media screen and (max-width:800px)
+{
+
+    .black{
+        width:40%;
+        height:40%;
+    }
+
+    .white{
+        width:40%;
+        height:40%;
+        
+    }
+    .firstwhite{
+        width: 50%;
+        justify-content: center;
+
+    }
+
+    .firstblack{
+        width: 50%;
+        justify-content: center;
+    }
+} */
+
+/* @media screen and (min-width:500px)
+{
+    
+    }
+    .black{
+        width:40%;
+        height:40%;
+    }
+
+    .white{
+        width:40%;
+        height:40%;
+        
+    }
+    .firstwhite{
+        width: 50%;
+        justify-content: center;
+
+    }
+
+    .firstblack{
+        width: 50%;
+        justify-content: center;
+    }
+} */
