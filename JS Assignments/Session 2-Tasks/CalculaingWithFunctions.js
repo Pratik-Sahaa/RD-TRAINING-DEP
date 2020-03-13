@@ -13,52 +13,55 @@
 // Divison should be integer division. For example, this should return 2, not 2.666666...:
 // eight(dividedBy(three()));
 
-
+var value;
 function zero(operation) {
-    if (typeof arguments[0] === 'undefined') {
-        return 0;
-    } else {
-        return arguments[0](0);
-    }
+    value = typeof arguments[0] === 'undefined' ? 0 : arguments[0](0);
+    return value;
 }
 
 function one() {
-    if (typeof arguments[0] === 'undefined') {
-        return 1;
-    } else { return arguments[0](1) }
+    value = typeof arguments[0] === 'undefined' ? 1 : arguments[0](1);
+    return value;
 }
 
 function two() {
-    if (typeof arguments[0] === 'undefined') {
-        return 2;
-    } else { return arguments[0](2); }
+    value = typeof arguments[0] === 'undefined' ? 2 : arguments[0](2);
+    return value;
 }
 
 function three() {
-    if (typeof arguments[0] === 'undefined') {
-        return 3;
-    } else { return arguments[0](3) }
+    value = typeof arguments[0] === 'undefined' ? 3 : arguments[0](3);
+    return value;
 }
 
 function four() {
-    if (typeof arguments[0] === 'undefined') {
-        return 4;
-    } else { return arguments[0](4); }
+    value = typeof arguments[0] === 'undefined' ? 4 : arguments[0](4);
+    return value;
 }
+
 function five() {
-    if (typeof arguments[0] === 'undefined') { return 5; } else { return arguments[0](5); }
+    value = typeof arguments[0] === 'undefined' ? 5 : arguments[0](5);
+    return value;
 }
+
 function six() {
-    if (typeof arguments[0] === 'undefined') { return 6; } else { return arguments[0](6); }
+    value = typeof arguments[0] === 'undefined' ? 6 : arguments[0](6);
+    return value;
 }
+
 function seven() {
-    if (typeof arguments[0] === 'undefined') { return 7; } else { return arguments[0](7); }
+    value = typeof arguments[0] === 'undefined' ? 7 : arguments[0](7);
+    return value;
 }
+
 function eight() {
-    if (typeof arguments[0] === 'undefined') { return 8; } else { return arguments[0](8); }
+    value = typeof arguments[0] === 'undefined' ? 8 : arguments[0](8);
+    return value;
 }
+
 function nine() {
-    if (typeof arguments[0] === 'undefined') { return 9; } else { return arguments[0](9); }
+    value = typeof arguments[0] === 'undefined' ? 9 : arguments[0](9);
+    return value;
 }
 
 function plus() {

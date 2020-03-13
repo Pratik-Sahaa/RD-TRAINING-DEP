@@ -39,50 +39,39 @@ Array.prototype.cube = function () {
     return holder;
 }
 
+function getSum(total, num) {
+    return total + num;
+}
 
 Array.prototype.average = function () {
     let input = this;
     let l = input.length;
-    var sum = 0;
-    for (let i = 0; i < l; i++) {
-        sum = sum + input[i];
-    }
-    return sum / l;
+    return ((input.reduce(getSum, 0)) / l);
 }
-
 
 Array.prototype.sum = function () {
     let input = this;
-    var sum = 0;
-    for (let i = 0; i < input.length; i++) {
-        sum = sum + input[i];
-    }
-    return sum;
+    return input.reduce(getSum, 0);
 }
+
+var even = function (num) {
+    return num % 2 === 0;
+};
 
 Array.prototype.even = function () {
     let input = this;
     var holder = [];
-    let index = 0;
-    for (let i = 0; i < input.length; i++) {
-        if ((input[i] % 2) == 0) {
-        holder[index] = input[i];
-            index++;
-        }
-    }
+    holder = input.filter(even);
     return holder;
 }
 
+var odd = function (num) {
+    return num % 2 !== 0;
+}
 
 Array.prototype.odd = function () {
     let input = this;
     var holder = [];
-    let index = 0;
-    for (let i = 0; i < input.length; i++) {
-        if (!(input[i] % 2) == 0) {
-        holder[index] = input[i];
-            index++;
-        }
-    }
+    holder = input.filter(odd);
     return holder;
 }

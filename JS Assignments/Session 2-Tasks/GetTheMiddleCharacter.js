@@ -20,9 +20,9 @@
 
 function getMiddle(s) {
   var length = s.length;
-  if (length % 2 == 0) {
+  if (length % 2 === 0) {
     return (s.charAt((length / 2) - 1) + s.charAt(length / 2));
-  } else if (length == 1) {
+  } else if (length === 1) {
     return (s);
   } else {
     return (s.charAt(length / 2));

@@ -14,11 +14,12 @@
 
 
 function rentalCarCost(d) {
+  var basePrice= d*40;
   if (d < 3) {
-    return d * 40;
+    return basePrice;
   } else if ((d >= 3) && (d < 7)) {
-    return (d * 40) - 20;
+    return basePrice - 20;
   } else {
-    return (d * 40) - 50;
+    return basePrice - 50;
   }
 }
