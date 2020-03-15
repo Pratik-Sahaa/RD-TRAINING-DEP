@@ -1,6 +1,9 @@
 body, html {
     height: 100%;
   }
+b{
+    color: rgb(255, 9, 21);
+}
 
 h1{
     text-align: center;
@@ -8,31 +11,38 @@ h1{
     font-family: 'Lobster', cursive;
 }
 body{
-    background-image: radial-gradient(rgb(196, 13, 13), rgba(228, 212, 209, 0.884), rgb(0, 0, 0));
+    background-image: radial-gradient(rgb(187, 167, 165), rgba(48, 27, 23, 0.884), rgb(243, 243, 245));
     background-size: 100%;
     background-repeat: no-repeat;
 }
 h2{
     text-align: center;
     font-size: 24px;
+    color: rgb(245, 192, 79);
 }
 
 .searchbar{
     text-align: center;
     margin-bottom: 50px;
 }
+img{
+    width: 100%;
+}
 
+#logo{
+    width: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    margin-top: -16px;
+}
 
 p{
     text-align: center;
-    font-size: 22px;
-    color: rgb(70, 5, 5);
+    font-size: 20px;
+    color: rgb(223, 245, 28);
     font-family: 'Courgette', cursive;
-}
-
-#foot{
-    font-size: 15px;
-    color: rgb(41, 31, 83);
 }
 
 .details {
@@ -44,8 +54,6 @@ p{
     flex-wrap: wrap;
     justify-content: center;
 }
-
-
 
 .container{
     width: 400px;
@@ -72,11 +80,6 @@ p{
 .active, .btn:hover {
    background-color: rgb(19, 194, 19);
    color: white;
-}
-
-footer{
-    position: relative;
-    margin-top: 600px;
 }
 
 

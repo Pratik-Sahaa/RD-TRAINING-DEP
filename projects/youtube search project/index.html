@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube Search</title>
     <link rel="stylesheet" href="youtube.css">
+    <link rel="icon" type="image/png" href="youtube.png">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
@@ -13,36 +14,19 @@
     <script src="https://apis.google.com/js/client.js?onload=init"></script>
 </head>
 
-<body>
-    <div class=searchbar>
-        <input type="text" id="searchbox" placeholder="Search videos..">
-        <button class="button" value="Search" onclick="Search()">Search</button>
-    </div>
-
+<body id="body">
     <div class=results>
         <template id="template">
             <div class="container">
-                <img style="width:100%">
+                <img id="image">
                 <h2 id="title"> </h2>
                 <p id="details"> </p>
             </div>
         </template>
     </div>
 
-    <div class="center">
-        <div class="myDIV">
-            <button class="btn active" onclick="Page(1)">1</button>
-            <button class="btn" onclick="Page(2)">2</button>
-            <button class="btn" onclick="Page(3)">3</button>
-            <button class="btn" onclick="Page(4)">4</button>
-            <button class="btn" onclick="Page(5)">5</button>
-            <button class="btn" onclick="Page(6)">6</button>
-        </div>
-    </div>
-</body>
+    <script src=jsHtml.js></script>
 
-<footer>
-    <p id="foot"> &copy; Epam Youtube</p>
-</footer>
+</body>
 
 </html>
