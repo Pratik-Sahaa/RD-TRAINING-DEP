@@ -4,24 +4,30 @@ body, html {
 b{
     color: rgb(255, 9, 21);
 }
+#line{
+    width:95%;
+    color: black;
+}
 
 h1{
     text-align: center;
     font-size: 40px;
     font-family: 'Lobster', cursive;
+    margin-bottom: -12px;
 }
 body{
-    background-image: radial-gradient(rgb(187, 167, 165), rgba(48, 27, 23, 0.884), rgb(243, 243, 245));
+    background-image: radial-gradient(rgb(168, 193, 226), rgba(165, 174, 212, 0.884), rgb(243, 243, 245));
     background-size: 100%;
     background-repeat: no-repeat;
 }
 h2{
     text-align: center;
     font-size: 24px;
-    color: rgb(245, 192, 79);
+    color: rgb(21, 18, 46);
 }
 
 .searchbar{
+    margin-top: 30px;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -38,10 +44,9 @@ img{
     margin-top: -16px;
 }
 
-p{
-    text-align: center;
+p{  text-align: center;
     font-size: 20px;
-    color: rgb(223, 245, 28);
+    color: rgb(122, 11, 11);
     font-family: 'Courgette', cursive;
 }
 
@@ -65,44 +70,18 @@ p{
 
 .center{
     text-align: center;
-    
 }
 
-.btn {
+.btn, .btnnext, .btnprev {
     border: none;
     outline: none;
     padding: 10px 16px;
-    background-color: #f1f1f1;
+    background-color: #dbdee6;
     cursor: pointer;
     font-size: 18px;
 }
   
-.active, .btn:hover {
-   background-color: rgb(19, 194, 19);
+.active, .btn:hover, .btnnext:hover , .btnprev:hover{
+   background-color: rgb(16, 214, 32);
    color: white;
 }
-
-
-.button {
-    display: inline-block;
-    padding: 7px 25px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Fredoka One', cursive;
-    outline: none;
-    color: rgb(180, 22, 22);
-    background-color: rgb(20, 5, 5);
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 4px rgb(122, 5, 5);
-  }
-  
-  .button:hover {background-color: #2f2a53}
-  
-  .button:active {
-    background-color: #26a115;
-    box-shadow: 0 2px rgba(0, 0, 0, 0.842);
-    transform: translateY(4px);
-  }
