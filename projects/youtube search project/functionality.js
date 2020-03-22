@@ -14,9 +14,9 @@ function Search(token) {
     // request.execute(searchItems);
     var query = document.getElementById('searchbox').value;
     if(token){
-        var url= `https://www.googleapis.com/youtube/v3/search?key=AIzaSyCiloWNkyk-lrUy7PyoZYkPsI2g9WEPTzE&type=video&part=snippet&maxResults=15&pageToken=${token}&q=js`
+        var url= `https://www.googleapis.com/youtube/v3/search?key=AIzaSyCiloWNkyk-lrUy7PyoZYkPsI2g9WEPTzE&type=video&part=snippet&q=${query}&maxResults=15&pageToken=${token}&q=js`
        } else {
-        var url=`https://www.googleapis.com/youtube/v3/search?key=AIzaSyCiloWNkyk-lrUy7PyoZYkPsI2g9WEPTzE&type=video&part=snippet&maxResults=15&q=js`
+        var url=`https://www.googleapis.com/youtube/v3/search?key=AIzaSyCiloWNkyk-lrUy7PyoZYkPsI2g9WEPTzE&type=video&part=snippet&q=${query}&maxResults=15&q=js`
     }
 
     fetch(url + query)
