@@ -1,24 +1,15 @@
-// function init() {
-//     gapi.client.setApiKey("AIzaSyCiloWNkyk-lrUy7PyoZYkPsI2g9WEPTzE");
-//     gapi.client.load("youtube", "v3", function search() {
-//     });
-// }
+function init() {
+    window.value = null;
+    window.value1 = null;
+}
 
 function Search(token) {
-    // var request = gapi.client.youtube.search.list({
-    //     part: "snippet",
-    //     type: "video",
-    //     q: document.getElementById('searchbox').value,
-    //     maxResults: 18,
-    // });
-    // request.execute(searchItems);
     var query = document.getElementById('searchbox').value;
-    if(token){
-        var url= `https://www.googleapis.com/youtube/v3/search?key=AIzaSyCiloWNkyk-lrUy7PyoZYkPsI2g9WEPTzE&type=video&part=snippet&q=${query}&maxResults=15&pageToken=${token}&q=js`
-       } else {
-        var url=`https://www.googleapis.com/youtube/v3/search?key=AIzaSyCiloWNkyk-lrUy7PyoZYkPsI2g9WEPTzE&type=video&part=snippet&q=${query}&maxResults=15&q=js`
+    if (token) {
+        var url = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyCiloWNkyk-lrUy7PyoZYkPsI2g9WEPTzE&type=video&part=snippet&q=${query}&maxResults=18&pageToken=${token}&q=js`
+    } else {
+        var url = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyCiloWNkyk-lrUy7PyoZYkPsI2g9WEPTzE&type=video&part=snippet&q=${query}&maxResults=18&q=js`
     }
-
     fetch(url + query)
         .then(response => {
             return response.json();
@@ -27,18 +18,6 @@ function Search(token) {
             searchItems(result);
         })
 }
-
-// function Search(nextprev) {
-    // var request = gapi.client.youtube.search.list({
-    //     part: "snippet",
-    //     type: "video",
-    //     q: document.getElementById('searchbox').value,
-    //     maxResults: 18,
-    //     pageToken: nextprev,
-    // });
-    // request.execute(searchItems);
-
-// }
 
 var videoList = [];
 

@@ -51,17 +51,13 @@ buttonnext.setAttribute('onclick', "Search(window.value)");
 buttonnext.innerHTML = "Next";
 document.getElementById('myDIV').append(buttonnext);
 
-// for( var p=2;p<=6;p++)
-// {
-//     let `button${p}` = document.createElement('button');
-//     `button${p}`.setAttribute("class", "btn");
-//     `button${p}`.setAttribute('onclick', "`Page(${p})`");
-//     document.getElementById('myDIV').append(`button${p}`);
-// }
-
-
 var arr = document.getElementsByClassName("btn");
-for(var x=0; x<arr.length; x++)
-{
-    arr[x].innerHTML= x+1;
+for (var x = 0; x < arr.length; x++) {
+    arr[x].innerHTML = x + 1;
 }
+
+// $(function(){
+//     $(".btn").click(function(){
+//         $(".btn").toggleClass("active");
+//     });
+// });
