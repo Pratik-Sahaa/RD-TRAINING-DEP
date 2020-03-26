@@ -21,7 +21,7 @@ searchBox.setAttribute("type", "text");
 searchBox.setAttribute("placeHolder", "Searchvideos");
 
 let submitButton = document.createElement('button');
-submitButton.setAttribute("onclick", "Search()");
+submitButton.setAttribute("onclick", "search()");
 submitButton.append("Search");
 submitButton.innerHTML = "Search";
 

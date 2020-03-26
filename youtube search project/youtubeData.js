@@ -3,7 +3,7 @@ function init() {
     window.value1 = null;
 }
 
-function Search(token) {
+function search(token) {
     var query = document.getElementById('searchbox').value;
     if (token) {
         var url = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyCiloWNkyk-lrUy7PyoZYkPsI2g9WEPTzE&type=video&part=snippet&q=${query}&maxResults=18&pageToken=${token}&q=js`
@@ -27,13 +27,15 @@ function searchItems(response) {
     console.log(response);
     console.log(response.items);
     videoList = response.items;
-    Page(1);
+    page(1);
 }
 
-function Page(pagenum) {
+function page(pagenum) {
     removeAllElementsFromResults();
     var current = (pagenum * 3) - 3;
     var clone, item, temp;
+
+
     for (i = current; i < (current + 3); i++) {
         item = videoList[i];
         temp = document.querySelector("#template");
