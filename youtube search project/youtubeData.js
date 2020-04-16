@@ -24,7 +24,6 @@ var videoList = [];
 function searchItems(response) {
     window.value = response.nextPageToken;
     window.value1 = response.prevPageToken;
-    console.log(response);
     console.log(response.items);
     videoList = response.items;
     page(1);
@@ -55,10 +54,9 @@ function page(pagenum) {
 }
 
 function removeAllElementsFromResults() {
-    let containers = document.querySelector('.results').getElementsByClassName('container');
-    let n = containers.length;
-    while (containers.length != 0) {
-        document.querySelector('.results').removeChild(containers[0]);
+    let container = document.querySelector('.results').getElementsByClassName('container');
+    while (container.length != 0) {
+        document.querySelector('.results').removeChild(container[0]);
     }
 }
 

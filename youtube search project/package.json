@@ -1,0 +1,25 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "description": "youtube project",
+  "main": "karma.conf.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "karma-cli": "^2.0.0",
+    "karma-phantomjs2-launcher": "^0.5.0"
+  },
+  "devDependencies": {
+    "jasmine-core": "^3.5.0",
+    "karma": "^4.4.1",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.0.2",
+    "karma-jasmine": "^3.1.1"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Pratik",
+  "license": "ISC"
+}
